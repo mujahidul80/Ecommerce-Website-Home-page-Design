@@ -1,0 +1,73 @@
+<app-header />
+<app-navbar />
+
+<main>
+  <app-hero />
+  <app-flash-deal />
+  <app-featured-products />
+  <app-category-grid />
+  <app-promo-banner />
+  
+  <app-brand-slider />
+
+  <app-category-section title="WOMEN'S FASHION" [products]="fashionProducts" />
+  <app-category-section title="PHONE & GADGETS" [products]="gadgetProducts" />
+
+  <div class="container py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Best Sellings -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="font-bold text-lg flex items-center gap-2">
+            <mat-icon class="text-primary">workspace_premium</mat-icon>
+            Best Sellings
+          </h3>
+          <button class="text-primary text-xs font-bold">View All</button>
+        </div>
+        <div class="space-y-4">
+          @for (i of [1,2,3]; track i) {
+            <div class="flex gap-4 items-center group cursor-pointer">
+              <div class="w-16 h-16 rounded-lg bg-slate-50 overflow-hidden">
+                <img src="https://picsum.photos/seed/best-{{i}}/100/100" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+              </div>
+              <div class="flex-1">
+                <h4 class="text-sm font-medium text-slate-700 group-hover:text-primary transition-colors">Premium Product {{i}}</h4>
+                <p class="text-primary font-bold text-sm">$99.00</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <!-- Top Rated -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="font-bold text-lg flex items-center gap-2">
+            <mat-icon class="text-orange-400">star</mat-icon>
+            Top Rated
+          </h3>
+          <button class="text-primary text-xs font-bold">View All</button>
+        </div>
+        <div class="space-y-4">
+          @for (i of [1,2,3]; track i) {
+            <div class="flex gap-4 items-center group cursor-pointer">
+              <div class="w-16 h-16 rounded-lg bg-slate-50 overflow-hidden">
+                <img src="https://picsum.photos/seed/rated-{{i}}/100/100" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+              </div>
+              <div class="flex-1">
+                <h4 class="text-sm font-medium text-slate-700 group-hover:text-primary transition-colors">Rated Product {{i}}</h4>
+                <p class="text-primary font-bold text-sm">$149.00</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-footer />
+
+<router-outlet />
+
+
