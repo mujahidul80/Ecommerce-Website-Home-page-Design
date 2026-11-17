@@ -150,6 +150,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <p align="left">
   <b>Mujahidul Islam</b><br>
+  💬 <b>WhatsApp</b>: <a href="https://wa.me/8801571432927"><b>+880 1571-432927</b></a> (Click to chat)<br>
   🔗 <b>GitHub</b>: <a href="https://github.com/mujahidul80">@mujahidul80</a><br>
   🌐 <b>Portfolio & Blog</b>: <a href="https://mujahidulib.blogspot.com">mujahidulib.blogspot.com</a><br>
   💬 <b>Feedback & Issues</b>: <a href="https://github.com/mujahidul80/Ecommerce-Website-Home-page-Design/issues">Report an Issue</a>
